@@ -107,10 +107,8 @@ function recursiveFAndBHelper(arr, index){
     return arr[index] + ' ';
 
   let str = arr[index] + ' ';
-  // console.log(str);
   str += recursiveFAndBHelper(arr, index + 1);
   str += arr[index] + ' ';
-  // console.log(str);
 
   return str;
 }
