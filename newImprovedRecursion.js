@@ -1,23 +1,33 @@
 
 // Things to know about recursion
 //
-// --- EVERY problem that can be solved with a for/while loop(iteratively) can also be solved recursively
-//
-// --- EVERY problem that can be solved recursively can also be solved using a for/while loop(iteratively)
+// --- every problem that can be solved with a for/while loop(iteratively) can also be solved recursively and vice versa.
+//     see the problems below for examples.
 //
 // --- some problems are easier to solve using for/while loops(iteratively) and some problems are easier to solve using
 //     recursion
 //
-// --- recursion is a very weird topic when you first see it. to get a better understanding of recursion, review how some problems have been solved
-//     using recursion and try to recreate them yourself. as you solve more of these problems they will become easier.
+// --- why are recursive functions important to understand? - they are important because there are some data structures and algorithms
+//     that are much easier to work with using recursive functions than iterative ones.
+//     see mergesort for quickly sorting elements in an array and binary tree traversal for examples. these problems can be solved
+//     iteratively, but it is much easier to understand and write the functions recursively.
+//
+// --- every recursive function call is pushed onto the stack(AKA 'function call stack'). this is good in some instances
+//     and bad in others. the stack is limited, so you do not want to infinitely call functions recursively as this will
+//     give a call stack exceeded error.
+//
+// --- recursion is a very weird topic when you first see it. recursion will get easier over time.
+//
+
 
 // tips to solve a problem using recursion
 //
-// 1. think about the problem and how you would solve the problem using recursion
-// 2. define base/edge cases first within the recursive function
-// 3. do work after the base/edge cases assuming that the rest of the work will be handled properly in the subsequent recursive calls
-//    (yes, it is weird but it will make more sense the more that you do it)
-// 4. when recursing be sure that you are approaching the base case(if you do not approach a base case, then you created an infinite loop)
+// 1. understand the problem and come up with an idea on how it can be solved before starting the function. this is good for
+//    every problem.
+// 2. define base/edge cases first within the recursive function.
+// 3. do work after the base/edge cases assuming that the rest of the work will be handled properly in the subsequent recursive calls.
+//    this is also known as 'divide and conquer'(yes, it is weird but it will make more sense the more that you do it).
+// 4. when recursing be sure that you are approaching the base case. if you do not approach a base case, then you created an infinite loop.
 
 
 // Create a function that takes in a number, and returns the sum of all positive numbers
