@@ -26,8 +26,8 @@
 //    every problem.
 // 2. define base/edge cases first within the recursive function.
 // 3. do work after the base/edge cases assuming that the rest of the work will be handled properly in the subsequent recursive calls.
+//    when recursing be sure that you are approaching the base case. if you do not approach a base case, then you created an infinite loop.
 //    this is also known as 'divide and conquer'(yes, it is weird but it will make more sense the more that you do it).
-// 4. when recursing be sure that you are approaching the base case. if you do not approach a base case, then you created an infinite loop.
 
 
 // Create a function that takes in a number, and returns the sum of all positive numbers
