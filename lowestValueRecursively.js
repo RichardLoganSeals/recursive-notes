@@ -10,11 +10,11 @@
 // to do this for each subsequent half. This is one way of dividing and conquering this problem.
 //
 // Examples
-// fib([]) -> null, because there are no values
-// fib([6]) -> 6
-// fib([2, 1, 3]) -> 1
-// fib([5, -10, 15, 100, 3, -9, 223978, 0]) -> -10
-// fib([0, -99, 100, 54, 1, -19675]) -> -19675
+// recursiveMinOfArray([]) -> null, because there are no values
+// recursiveMinOfArray([6]) -> 6
+// recursiveMinOfArray([2, 1, 3]) -> 1
+// recursiveMinOfArray([5, -10, 15, 100, 3, -9, 223978, 0]) -> -10
+// recursiveMinOfArray([0, -99, 100, 54, 1, -19675]) -> -19675
 
 // Finds the minimum element in the array from index low to high using recursion
 function recursiveMinOfArrayHelper(array, low, high){
